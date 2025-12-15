@@ -24,5 +24,4 @@ function showMovies(movies) {
     document.body.append(img)
   }
 }
-apiFetch(topRatedUrl).then(showMovies);
 apiFetch(popularUrl).then(showMovies);
