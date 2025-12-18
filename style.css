@@ -1,0 +1,17 @@
+#moviesContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.movieCard {
+  width: 180px;           /* matches poster width */
+  display: flex;
+  flex-direction: column;
+}
+
+.movieCard img {
+  width: 100%;
+  border-radius: 6px;
+}
+
