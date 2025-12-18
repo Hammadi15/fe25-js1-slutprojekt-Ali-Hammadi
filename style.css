@@ -1,3 +1,6 @@
+body{
+  background-color: #FFCF71;
+}
 #moviesContainer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -5,13 +8,71 @@
 }
 
 .movieCard {
-  width: 180px;           /* matches poster width */
+  width: 250px; /* matches poster width */
   display: flex;
   flex-direction: column;
+
+  background: #B6771D;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
 }
 
 .movieCard img {
   width: 100%;
   border-radius: 6px;
 }
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 
+  background-color: #b77534; /* muted brown/pink */
+  padding: 12px 20px;
+  margin-right: 0px;
+}
+
+/* Buttons */
+.navBar button {
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Hover effect */
+.navBar button:hover {
+  background-color: #d6d6d6;
+}
+
+
+
+/* Search container */
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #e6e6e6;
+  border-radius: 12px;
+  padding: 6px 10px;
+}
+
+/* Search input */
+.search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  width: 120px;
+}
+
+/* Search icon */
+.search .icon {
+  font-size: 14px;
+  margin-left: 6px;
+}
