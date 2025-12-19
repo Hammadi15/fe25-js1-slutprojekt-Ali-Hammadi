@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <script type="module" src="/js/index.js" defer></script>
+    <nav class="navBar">
+      <a href="home.html" class="btn">Home</a>
+      <button id="popularBtn">Top Popular</button>
+      <button id="ratedBtn">Top Rated</button>
+      <p id="errorMessage" class="error"></p>
+
+      <form id="searchForm">
+        <div class="search">
+          <input id="searchInput" type="text" placeholder="Search" />
+          <span class="icon">🔍</span>
+
+          <button type="submit" id="searchBtn">Search</button>
+
+          <select id="searchType">
+            <option value="movie">Movies</option>
+            <option value="person">People</option>
+          </select>
+        </div>
+      </form>
+      <div id="results"></div>
+    </nav>
+
+    <div id="moviesContainer"></div>
+  </body>
+</html>
