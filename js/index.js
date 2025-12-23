@@ -31,12 +31,12 @@ searchForm.addEventListener("submit", (e) => {
 
   apiFetch(searchUrl(type, query)).then((results) => {
     if (!results) {
-      moviesContainer.innerHTML = "<p>Något gick fel. Försök igen senare.</p>";
+      moviesContainer.innerHTML = "<p>Something went wrong. Please try again later </p>";
       return;
     }
 
     if (results.length === 0) {
-      moviesContainer.innerHTML = "<p>Inga resultat hittades.</p>";
+      moviesContainer.innerHTML = "<p>No results found.</p>";
       return;
     }
 

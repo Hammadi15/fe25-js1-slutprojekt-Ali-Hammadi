@@ -10,6 +10,7 @@ export function showMovies(movies, showDescription = false) {
     card.className = "movieCard";
     card.innerHTML = `
       <img src="https://image.tmdb.org/t/p/w200${movie.poster_path}" />
+       alt="${movie.title}
       <p><strong>Title:</strong> ${movie.title}</p>
       <p><strong>Year:</strong> ${movie.release_date}</p>
       ${
@@ -37,6 +38,7 @@ export function showPeople(people) {
     const img = document.createElement("img");
     if (person.profile_path) {
       img.src = "https://image.tmdb.org/t/p/w200" + person.profile_path;
+      
     }
     card.appendChild(img);
 
